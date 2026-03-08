@@ -3,7 +3,7 @@
 - Notebook ID: a66715a2-791e-4c6e-80f5-0a4f8c6e7514
 - Exported at: 2026-03-08T19:38:26Z
 
-## PRUEBA, ACA NO EMPIEZA
+# PRUEBA, ACA NO EMPIEZA
 ## [Note] Fundamentos y Arquitectura de las Redes de Computadoras
 
 **1. Usos de las Redes de Computadoras** [1]
@@ -93,7 +93,7 @@ Las redes se categorizan según la distancia geográfica que cubren:
 *   **Conmutación de Paquetes vs. Circuitos:** Las redes informáticas actuales y la Internet favorecen la **conmutación de paquetes** (redes sin conexión donde los mensajes se enrutan de forma independiente y pueden llegar desordenados), lo cual provee tolerancia a fallos [46-48]. Por el contrario, las compañías telefónicas tradicionales utilizaban la **conmutación de circuitos** (redes orientadas a conexión con una ruta física reservada) [47, 49].
 
 ---
-## ACA SI EMPIEZA
+# ACA SI EMPIEZA
 ## [Note] 1. Aplicaciones y Usos de las Redes de Computadoras
 
 Las redes de computadoras se definen como conjuntos de dispositivos de computación autónomos que están interconectados con el fin de intercambiar información a través de medios de transmisión, tales como cables de cobre, fibra óptica u ondas electromagnéticas [1-3]. La convergencia entre la industria de las computadoras y la de las comunicaciones ha reemplazado el concepto de computadoras centrales aisladas por sistemas distribuidos donde múltiples redes prestan diversos servicios [4-6]. 
