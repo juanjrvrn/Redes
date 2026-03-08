@@ -198,7 +198,7 @@ Cubren áreas geográficas extensas (países o continentes) y comúnmente son op
     *   **Conmutación de Paquetes:** Heredada de la comunidad de Internet. Es un servicio sin conexión (datagramas) [25, 26]. Los mensajes se dividen y se enrutan de manera independiente mediante el modelo *store-and-forward* (almacenamiento y reenvío) [27, 28]. No reserva ancho de banda, por lo que es altamente eficiente y tolerante a fallos (los paquetes pueden rodear un nodo caído) [24, 29]. Sin embargo, los paquetes pueden llegar en desorden, dificulta la implementación de QoS y puede sufrir de congestión o retardo si muchos paquetes llegan al mismo tiempo [19, 25, 28, 30].
 
 ### 5. Interredes (Internetworks)
-Son colecciones de redes independientes o incompatibles conectadas entre sí [31, 32].
+Son colecciones de redes independientes o incompatibles conectadas entre sí [31, 32]. Capacidad de desensamblar, transmitir y volver a ensamblar el mensaje.
 *   Para unirlas se emplean **pasarelas (gateways)** o enrutadores que operan en la capa de red, traduciendo formatos de hardware y software para permitir el paso de información (por ejemplo, entre una red inalámbrica y una alámbrica) [33].
 
 ---
