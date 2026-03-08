@@ -402,10 +402,9 @@ La estandarización es un proceso fundamental en el diseño de redes. De acuerdo
 
 *   **Organizaciones de Estandarización (Quién es quién):** El mundo de los estándares se divide en varias organizaciones clave [4, 5]. En las telecomunicaciones destaca la **UIT (Unión Internacional de Telecomunicaciones)** [6]. Para los estándares internacionales existe la **ISO**, y en la industria eléctrica y electrónica el **IEEE** (responsable de los estándares LAN como el 802.3 para Ethernet y el 802.11 para WiFi) [6-8]. Los estándares de Internet son gestionados por la **IETF (Internet Engineering Task Force)**, que pública sus normativas en documentos técnicos llamados **RFCs (Request For Comments)** [6, 9].
 *   **El "Apocalipsis de los dos elefantes" (Teoría de David Clark):** Este concepto ilustra la importancia de la *sincronización* al crear un estándar [10]. Se representa gráficamente en una curva de "Actividad" versus "Tiempo". El gráfico muestra dos grandes picos (los "elefantes"): el primero representa el auge de la **Investigación** (descubrimiento, discusiones, publicaciones) y el segundo representa la **Inversión de miles de millones de dólares** por parte de las corporaciones [11]. El estándar exitoso debe escribirse exactamente en el "valle" entre ambos elefantes [11, 12]. Si se escribe muy pronto, la tecnología no se comprende bien; si se escribe muy tarde, las empresas ya han invertido en soluciones propietarias incompatibles [12].
-*    **Categorías de estándares**
-Existen dos formas principales en las que surgen los estándares:
-   * **De Facto (de hecho):** Son normas que surgen sin un plan formal pero que se vuelven universales por su éxito. Ejemplos son el protocolo *HTTP* y la tecnología *Bluetooth*.
-   * **De Jure (por ley):** Son normas adoptadas mediante las reglas de organismos oficiales de normalización.
+*    **Categorías de estándares: ** Existen dos formas principales en las que surgen los estándares:
+    *    **De Facto (de hecho):** Son normas que surgen sin un plan formal pero que se vuelven universales por su éxito. Ejemplos son el protocolo *HTTP* y la tecnología *Bluetooth*.
+    *    **De Jure (por ley):** Son normas adoptadas mediante las reglas de organismos oficiales de normalización.
 
 ### 8. Asuntos políticos, legales y sociales
 Las redes de computadoras, al igual que la imprenta en su momento, permiten distribuir y ver contenido de formas sin precedentes, pero esto viene acompañado de complejos problemas éticos y legales [13].
