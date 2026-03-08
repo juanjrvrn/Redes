@@ -181,7 +181,7 @@ Permiten la comunicación entre dispositivos cercanos a una persona (alcance de 
 
 ### 2. Redes de Área Local (LAN)
 Conectan dispositivos dentro de un edificio o campus y pertenecen a una sola organización [4].
-*   **Ethernet Conmutada:** Utiliza topologías punto a punto conectadas a un conmutador (*switch*) central. Los switches aíslan los dominios de colisión por puerto, eliminando la necesidad de compartir el medio como en la antigua Ethernet [5, 6]. Utilizan algoritmos de árbol de expansión (spanning tree) para evitar bucles [7].
+*   **Ethernet (802.3) Conmutada:** Utiliza topologías punto a punto conectadas a un conmutador (*switch*) central. Los switches retransmiten los paquetes al destino correcto segun la direccion, eliminando la necesidad de compartir el medio (cable lineal) como en la antigua Ethernet [5, 6]. Utilizan algoritmos de árbol de expansión (spanning tree) para evitar bucles [7].
 *   **VLAN (Redes LAN Virtuales):** Permiten dividir lógicamente una red física mediante software, asignando "colores" o etiquetas a los puertos para aislar el tráfico (incluyendo el de difusión) por departamentos o funciones [8, 9].
 *   **Redes Domésticas:** Son un subtipo de LAN diseñadas para conectar computadoras, televisores y electrodomésticos (Internet de las Cosas) de forma plug-and-play [10, 11]. 
 
