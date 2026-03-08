@@ -177,7 +177,7 @@ Las tecnologías actuales se clasifican por su alcance físico y paradigma de co
 
 ### 1. Redes de Área Personal (PAN)
 Permiten la comunicación entre dispositivos cercanos a una persona (alcance de aprox. 1 metro) [2].
-*   **Funcionamiento:** Estándares como Bluetooth operan bajo un paradigma maestro-esclavo, donde un nodo principal asigna direcciones y frecuencias a los periféricos para compartir datos a bajas tasas de bits [2, 3].
+*   **Funcionamiento:** Estándares como Bluetooth (802.15) operan bajo un paradigma maestro-esclavo, donde un nodo principal asigna direcciones y frecuencias a los periféricos para compartir datos a bajas tasas de bits [2, 3].
 
 ### 2. Redes de Área Local (LAN)
 Conectan dispositivos dentro de un edificio o campus y pertenecen a una sola organización [4].
