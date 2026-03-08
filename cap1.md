@@ -404,8 +404,8 @@ La estandarización es un proceso fundamental en el diseño de redes. De acuerdo
 *   **El "Apocalipsis de los dos elefantes" (Teoría de David Clark):** Este concepto ilustra la importancia de la *sincronización* al crear un estándar [10]. Se representa gráficamente en una curva de "Actividad" versus "Tiempo". El gráfico muestra dos grandes picos (los "elefantes"): el primero representa el auge de la **Investigación** (descubrimiento, discusiones, publicaciones) y el segundo representa la **Inversión de miles de millones de dólares** por parte de las corporaciones [11]. El estándar exitoso debe escribirse exactamente en el "valle" entre ambos elefantes [11, 12]. Si se escribe muy pronto, la tecnología no se comprende bien; si se escribe muy tarde, las empresas ya han invertido en soluciones propietarias incompatibles [12].
 *    **Categorías de estándares**
 Existen dos formas principales en las que surgen los estándares:
-- *De Facto (de hecho):* Son normas que surgen sin un plan formal pero que se vuelven universales por su éxito. Ejemplos son el protocolo *HTTP* y la tecnología *Bluetooth*.
-- *De Jure (por ley):* Son normas adoptadas mediante las reglas de organismos oficiales de normalización
+   * **De Facto (de hecho):** Son normas que surgen sin un plan formal pero que se vuelven universales por su éxito. Ejemplos son el protocolo *HTTP* y la tecnología *Bluetooth*.
+   * **De Jure (por ley):** Son normas adoptadas mediante las reglas de organismos oficiales de normalización.
 
 ### 8. Asuntos políticos, legales y sociales
 Las redes de computadoras, al igual que la imprenta en su momento, permiten distribuir y ver contenido de formas sin precedentes, pero esto viene acompañado de complejos problemas éticos y legales [13].
