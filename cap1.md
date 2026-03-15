@@ -3,11 +3,8 @@
 - Notebook ID: a66715a2-791e-4c6e-80f5-0a4f8c6e7514
 - Exported at: 2026-03-08T19:38:26Z
 
+# PRUEBA, ACA NO EMPIEZA
 ## [Note] Fundamentos y Arquitectura de las Redes de Computadoras
-
-¡Hola! Claro que sí, vamos a organizar esto. Basándome en la agenda principal de tus diapositivas y en el primer capítulo del libro de Tanenbaum, he preparado un esquema estructurado de todos los temas introductorios del curso [1, 2]. 
-
-Aquí tienes el índice exhaustivo y detallado:
 
 **1. Usos de las Redes de Computadoras** [1]
 *   **Acceso a la información:** Uso del modelo cliente-servidor (peticiones y respuestas) y redes *peer-to-peer* (comunicación entre iguales sin servidores fijos) [3, 4].
@@ -58,8 +55,6 @@ Aquí tienes el índice exhaustivo y detallado:
 **9. Unidades de Medida** [40]
 *   **Diferenciación de sistemas:** Uso estricto de potencias de 10 para tasas de transmisión (bits por segundo) y potencias de 2 para almacenamiento de datos (Bytes) [40, 42].
 
-¿Te gustaría que profundicemos en alguno de estos puntos, o preferirías que pasemos directamente a repasar los conceptos de alguna de las capas?
-
 ---
 
 ## [Note] Fundamentos y Arquitectura de las Redes de Computadoras
@@ -97,10 +92,8 @@ Las redes se categorizan según la distancia geográfica que cubren:
 *   **Redes móviles:** Basan su arquitectura en "celdas" espaciales servidas por estaciones base [43, 44]. Cuando un usuario se desplaza fuera del rango de una celda, la red redirige la señal a una nueva base en un proceso llamado **handover** (o traspaso) [43, 45].
 *   **Conmutación de Paquetes vs. Circuitos:** Las redes informáticas actuales y la Internet favorecen la **conmutación de paquetes** (redes sin conexión donde los mensajes se enrutan de forma independiente y pueden llegar desordenados), lo cual provee tolerancia a fallos [46-48]. Por el contrario, las compañías telefónicas tradicionales utilizaban la **conmutación de circuitos** (redes orientadas a conexión con una ruta física reservada) [47, 49].
 
-¿Te gustaría que preparemos también un resumen de la segunda parte de este capítulo, enfocándonos en los modelos de referencia OSI y TCP/IP?
-
 ---
-
+# ACA SI EMPIEZA
 ## [Note] 1. Aplicaciones y Usos de las Redes de Computadoras
 
 Las redes de computadoras se definen como conjuntos de dispositivos de computación autónomos que están interconectados con el fin de intercambiar información a través de medios de transmisión, tales como cables de cobre, fibra óptica u ondas electromagnéticas [1-3]. La convergencia entre la industria de las computadoras y la de las comunicaciones ha reemplazado el concepto de computadoras centrales aisladas por sistemas distribuidos donde múltiples redes prestan diversos servicios [4-6]. 
@@ -137,13 +130,9 @@ Este concepto engloba la "computación ubicua" (Ubiquitous computing), que integ
 *   **Sensores inalámbricos:** Nodos que reúnen información acerca de parámetros físicos, implementados desde parquímetros hasta monitores de consumo de agua o cámaras digitales de alta gama que envían fotografías a servidores de edición en tiempo real [37, 38].
 *   **Redes Power-line:** Para soportar esta densidad de dispositivos sin saturar las frecuencias de radio, se utiliza el cableado eléctrico del hogar para difundir señales de red y datos de manera simultánea con la electricidad, operando ambas en bandas de frecuencia distintas [39-42].
 
-¿Te gustaría que pasemos ahora a explorar el Punto 2, sobre los distintos tipos de redes de computadoras (LAN, WAN, VPN, etc.), o prefieres profundizar en algún detalle específico de este primer bloque?
-
 ---
 
 ## [Note] 2. Tipos y Arquitecturas de las Redes de Computadoras
-
-Aquí tienes el resumen exhaustivo y a nivel universitario del **Punto 2: Tipos de Redes de Computadoras**, integrando todos los detalles técnicos y ejemplos del libro y las diapositivas:
 
 **2. Tipos de Redes de Computadoras**
 
@@ -177,13 +166,9 @@ Aquí tienes el resumen exhaustivo y a nivel universitario del **Punto 2: Tipos 
     *   **VPN (*Virtual Private Networks* / Redes Privadas Virtuales)**: Permiten conectar lógicamente redes individuales ubicadas en distintos sitios geográficos a través de Internet, operando como una sola red y acabando con la "tiranía de la geografía" [22, 23, 25].
     *   Estas redes facilitan la compartición de monitores (escritorios remotos), la telefonía IP (*Voice over IP*) y la comunicación B2B para negocios electrónicos, permitiendo hacer pedidos automáticamente y reducir inventarios [23, 26, 27].
 
-¿Te parece bien si avanzamos al Punto 3 para explorar la clasificación de las redes según su escala (PAN, LAN, MAN, WAN)?
-
 ---
 
 ## [Note] 3. Tecnologias de Redes: de lo Local a Global
-
-Aquí tienes el resumen del **Punto 3: Tecnología de redes, desde lo local a lo global**, reestructurado y profundizado para incluir los componentes técnicos de las WAN, las VPN y los paradigmas de conmutación.
 
 ### Evolución de la Tecnología de Redes
 La arquitectura de redes ha evolucionado desde los Mainframes centralizados en 1971, pasando por la era de la Computadora Personal (1980), el modelo Cliente-Servidor en LAN (1990), los sistemas basados en Web en WAN (2000), hasta llegar a la Nube apoyada en enormes datacenters (2011 en adelante) [1].
@@ -192,11 +177,11 @@ Las tecnologías actuales se clasifican por su alcance físico y paradigma de co
 
 ### 1. Redes de Área Personal (PAN)
 Permiten la comunicación entre dispositivos cercanos a una persona (alcance de aprox. 1 metro) [2].
-*   **Funcionamiento:** Estándares como Bluetooth operan bajo un paradigma maestro-esclavo, donde un nodo principal asigna direcciones y frecuencias a los periféricos para compartir datos a bajas tasas de bits [2, 3].
+*   **Funcionamiento:** Estándares como Bluetooth (802.15) operan bajo un paradigma maestro-esclavo, donde un nodo principal asigna direcciones y frecuencias a los periféricos para compartir datos a bajas tasas de bits [2, 3].
 
 ### 2. Redes de Área Local (LAN)
 Conectan dispositivos dentro de un edificio o campus y pertenecen a una sola organización [4].
-*   **Ethernet Conmutada:** Utiliza topologías punto a punto conectadas a un conmutador (*switch*) central. Los switches aíslan los dominios de colisión por puerto, eliminando la necesidad de compartir el medio como en la antigua Ethernet [5, 6]. Utilizan algoritmos de árbol de expansión (spanning tree) para evitar bucles [7].
+*   **Ethernet (802.3) Conmutada:** Utiliza topologías punto a punto conectadas a un conmutador (*switch*) central. Los switches retransmiten los paquetes al destino correcto segun la direccion, eliminando la necesidad de compartir el medio (cable lineal) como en la antigua Ethernet [5, 6]. Utilizan algoritmos de árbol de expansión (spanning tree) para evitar bucles [7].
 *   **VLAN (Redes LAN Virtuales):** Permiten dividir lógicamente una red física mediante software, asignando "colores" o etiquetas a los puertos para aislar el tráfico (incluyendo el de difusión) por departamentos o funciones [8, 9].
 *   **Redes Domésticas:** Son un subtipo de LAN diseñadas para conectar computadoras, televisores y electrodomésticos (Internet de las Cosas) de forma plug-and-play [10, 11]. 
 
@@ -213,16 +198,12 @@ Cubren áreas geográficas extensas (países o continentes) y comúnmente son op
     *   **Conmutación de Paquetes:** Heredada de la comunidad de Internet. Es un servicio sin conexión (datagramas) [25, 26]. Los mensajes se dividen y se enrutan de manera independiente mediante el modelo *store-and-forward* (almacenamiento y reenvío) [27, 28]. No reserva ancho de banda, por lo que es altamente eficiente y tolerante a fallos (los paquetes pueden rodear un nodo caído) [24, 29]. Sin embargo, los paquetes pueden llegar en desorden, dificulta la implementación de QoS y puede sufrir de congestión o retardo si muchos paquetes llegan al mismo tiempo [19, 25, 28, 30].
 
 ### 5. Interredes (Internetworks)
-Son colecciones de redes independientes o incompatibles conectadas entre sí [31, 32].
+Son colecciones de redes independientes o incompatibles conectadas entre sí [31, 32]. Capacidad de desensamblar, transmitir y volver a ensamblar el mensaje.
 *   Para unirlas se emplean **pasarelas (gateways)** o enrutadores que operan en la capa de red, traduciendo formatos de hardware y software para permitir el paso de información (por ejemplo, entre una red inalámbrica y una alámbrica) [33].
-
-Con esta integración, el panorama técnico de las WAN y sus formas de conmutación queda completo. ¿Te gustaría que pasemos a explorar el Punto 4 sobre los ejemplos específicos de redes (Internet, Móviles y WiFi) o prefieres revisar algún otro concepto de este esquema?
 
 ---
 
 ## [Note] 4. Ejemplos de Redes: Evolución de Internet y Redes Inalámbricasnn
-
-Aquí tienes el resumen definitivo del Punto 4, integrando absolutamente todos los detalles técnicos de tus notas, la arquitectura de Internet que faltaba, y la información sobre conmutación, traspasos y WiFi.
 
 ### 1. Línea de Tiempo de la Internet
 *   **Fines de 1950s:** El Departamento de Defensa de EE. UU. busca crear una red de mando y control capaz de sobrevivir a un ataque nuclear [1].
@@ -276,8 +257,6 @@ El estándar 802.11 opera en bandas sin licencia (2.4 GHz y 5 GHz) [39, 40]. Fun
 
 ***
 
-¿Te gustaría que avancemos con el punto 5 del esquema sobre los Modelos OSI y TCP/IP, o prefieres que genere unas tarjetas de estudio (flashcards) con este resumen para ayudarte a memorizarlo para tus exámenes?
-
 ---
 
 ## [Note] Génesis y Evolución de la Red Global
@@ -291,13 +270,9 @@ Aquí tienes el flujo cronológico exacto de cómo la tecnología de red evoluci
 *   **Años 90 (Comercialización y la Web):** El gobierno se retiró y cedió la infraestructura a operadores comerciales de telecomunicaciones [11, 12]. A principios de la década nació la **World Wide Web (WWW)**, lo que hizo que el tamaño y uso de la red explotaran a nivel mundial [13].
 *   **Actualidad (La Nube y CDNs):** La arquitectura jerárquica clásica se ha "aplanado" [14]. Hoy en día, la red está dominada por el contenido multimedia y las **granjas de servidores**; gigantes como Google o Netflix se conectan directamente con los proveedores de Internet locales para entregar datos de forma masiva y rápida [14, 15].
 
-Ya que estás estudiando para tu examen, ¿te gustaría que convierta esta línea de tiempo en unas **tarjetas de estudio (flashcards)** para que las repases rápido, o prefieres que avancemos a la arquitectura de las **redes móviles**?
-
 ---
 
 ## [Note] Génesis de ARPANET y la Evolución del Internet Moderno
-
-¡Claro que sí! La historia de ARPANET está llena de detalles técnicos y anécdotas fascinantes que el Tanenbaum destaca. Aquí tienes un análisis más profundo de sus fases clave:
 
 **1. El miedo nuclear y el rechazo de AT&T**
 Todo comenzó en la Guerra Fría. El Departamento de Defensa de EE. UU. (DoD) necesitaba una red de mando y control que sobreviviera a un ataque nuclear [1]. La red telefónica de la época era vulnerable porque dependía de unas pocas oficinas centrales [1]. Paul Baran propuso un diseño tolerante a fallos usando **conmutación de paquetes**, pero cuando el Pentágono le pidió a AT&T (el monopolio telefónico) que construyera un prototipo, AT&T rechazó la idea rotundamente diciendo que era imposible de construir [2].
@@ -311,13 +286,9 @@ BBN diseñó la subred (los IMPs), pero consideró que su trabajo terminaba ahí
 **4. El experimento del camión y el nacimiento de TCP/IP**
 El mayor desafío llegó cuando ARPA intentó unir ARPANET con redes inalámbricas. En una demostración, usaron un camión en movimiento en California que enviaba datos por radio, los cuales pasaban a ARPANET y luego por satélite hasta Londres [7]. El experimento demostró que los protocolos originales de ARPANET no servían para cruzar redes de tecnologías distintas [8]. Este fracaso directo llevó a los investigadores Vint Cerf y Bob Kahn a inventar un protocolo universal para interconectar cualquier red: el **TCP/IP** [8].
 
-¿Te gustaría que veamos cómo el protocolo TCP/IP impulsó la creación de **NSFNET** (el siguiente paso hacia el Internet moderno), o prefieres pasar a la arquitectura de las redes de telefonía móvil?
-
 ---
 
 ## [Note] 5. Protocolos de Red
-
-¡Entendido! Aquí tienes el resumen definitivo, exhaustivo y detallado del **Punto 5: Protocolos de Red**, integrando absolutamente toda la información del libro de Tanenbaum y tus diapositivas, sin omitir ningún concepto.
 
 ### **1. Definición y Análisis de Protocolos**
 Un protocolo de red es un conjunto de reglas y normas que deben cumplir los dispositivos para establecer una comunicación de datos en una red [1, 2]. De manera específica, un protocolo es un acuerdo que rige el formato y el significado de los paquetes o mensajes que se intercambian las entidades homólogas (procesos iguales o *peers*) dentro de una sola capa [3, 4]. 
@@ -378,10 +349,6 @@ La interfaz de servicio se especifica formalmente a través de un conjunto de pr
 *   **SEND:** Envía información a través de la conexión establecida [52, 55].
 *   **DISCONNECT:** Solicita la liberación de la conexión [52, 55]. Esta desconexión puede ser *asimétrica* (cualquiera puede romper la conexión completa de una vez) o *simétrica* (cada dirección se cierra por separado y de forma independiente) [56].
 
-Con este nivel de detalle, tienes toda la información técnica, ejemplos y divisiones exactas planteadas por el libro y tus diapositivas. 
-
-¿Te gustaría que pasemos ahora a revisar el Punto 6 para comparar en detalle los Modelos OSI y TCP/IP?
-
 ---
 
 ## [Note] 6. Modelos de Referencia: Arquitecturas OSI y TCP/IP en Redes
@@ -424,8 +391,6 @@ Ambos modelos tienen fortalezas y debilidades históricas y técnicas [46, 47]:
 #### El Modelo Híbrido de 5 Capas
 Debido a las deficiencias de ambos modelos de manera aislada, la academia moderna y la bibliografía utilizan un enfoque híbrido de **5 capas** (Física, Enlace, Red, Transporte y Aplicación) [46, 47, 49-51]. Este modelo retiene el gran valor teórico del modelo OSI para comprender las arquitecturas de red y la separación de funciones, pero se centra exclusivamente en estudiar los protocolos exitosos y prácticos derivados del ecosistema TCP/IP y de las tecnologías modernas de enlace [49, 52, 53].
 
-¿Te gustaría que revisemos algún concepto específico de estas capas o pasamos directamente al punto 7 sobre Estandarización?
-
 ---
 
 ## [Note] 7, 8, 9. Fundamentos de Redes: Estándares, Ética y Unidades de Medida
@@ -437,6 +402,9 @@ La estandarización es un proceso fundamental en el diseño de redes. De acuerdo
 
 *   **Organizaciones de Estandarización (Quién es quién):** El mundo de los estándares se divide en varias organizaciones clave [4, 5]. En las telecomunicaciones destaca la **UIT (Unión Internacional de Telecomunicaciones)** [6]. Para los estándares internacionales existe la **ISO**, y en la industria eléctrica y electrónica el **IEEE** (responsable de los estándares LAN como el 802.3 para Ethernet y el 802.11 para WiFi) [6-8]. Los estándares de Internet son gestionados por la **IETF (Internet Engineering Task Force)**, que pública sus normativas en documentos técnicos llamados **RFCs (Request For Comments)** [6, 9].
 *   **El "Apocalipsis de los dos elefantes" (Teoría de David Clark):** Este concepto ilustra la importancia de la *sincronización* al crear un estándar [10]. Se representa gráficamente en una curva de "Actividad" versus "Tiempo". El gráfico muestra dos grandes picos (los "elefantes"): el primero representa el auge de la **Investigación** (descubrimiento, discusiones, publicaciones) y el segundo representa la **Inversión de miles de millones de dólares** por parte de las corporaciones [11]. El estándar exitoso debe escribirse exactamente en el "valle" entre ambos elefantes [11, 12]. Si se escribe muy pronto, la tecnología no se comprende bien; si se escribe muy tarde, las empresas ya han invertido en soluciones propietarias incompatibles [12].
+*    **Categorías de estándares:** Existen dos formas principales en las que surgen los estándares:
+      *    **De Facto (de hecho):** Son normas que surgen sin un plan formal pero que se vuelven universales por su éxito. Ejemplos son el protocolo *HTTP* y la tecnología *Bluetooth*.
+      *    **De Jure (por ley):** Son normas adoptadas mediante las reglas de organismos oficiales de normalización.
 
 ### 8. Asuntos políticos, legales y sociales
 Las redes de computadoras, al igual que la imprenta en su momento, permiten distribuir y ver contenido de formas sin precedentes, pero esto viene acompañado de complejos problemas éticos y legales [13].
@@ -461,96 +429,5 @@ En ciencias computacionales y redes, es estrictamente necesario diferenciar los 
 *   **Otras medidas temporales comunes en protocolos:** Milisegundos ($10^{-3}$ seg), microsegundos ($\mu sec$, $10^{-6}$ seg), nanosegundos ($10^{-9}$ seg) y picosegundos ($10^{-12}$ seg) [15].
 
 ***
-
-¿Te gustaría que generemos algunas tarjetas de estudio (flashcards) para que puedas repasar rápidamente estos prefijos métricos y las distintas organizaciones de estandarización antes de tu examen?
-
----
-
-## [Mindmap] Arquitectura y Fundamentos de las Redes de Computadoras
-
-- **Redes de Computadoras I - Introducción**
-  - **Usos de Redes**
-    - **Acceso a la información**
-      - **Modelo cliente-servidor**
-      - **Comunicación peer-to-peer**
-      - **Navegadores y redes sociales**
-    - **Comunicación persona a persona**
-    - **Comercio electrónico (B2B, B2C, C2C)**
-    - **Entretenimiento (IPTV, Streaming, Juegos)**
-    - **Internet de las cosas (IoT)**
-  - **Tipos de Redes**
-    - **Redes de acceso de banda ancha**
-    - **Redes móviles e inalámbricas**
-    - **Redes proveedoras de contenido (CDN)**
-    - **Redes de tránsito (Backbone)**
-    - **Redes corporativas (VPN, VoIP)**
-  - **Tecnologías por Alcance**
-    - **PAN (Personal Area Network)**
-      - **Bluetooth**
-    - **LAN (Local Area Network)**
-      - **Ethernet**
-      - **WiFi**
-    - **Redes domésticas**
-      - **Power-line**
-    - **MAN (Metropolitan Area Network)**
-      - **Cable TV**
-      - **WiMax**
-    - **WAN (Wide Area Network)**
-      - **ISP**
-      - **VPN**
-    - **Internet (Inter-redes)**
-  - **Ejemplos y Arquitectura**
-    - **La Internet**
-      - **Evolución NSFNET**
-      - **Estructura jerárquica y plana**
-    - **Redes Móviles**
-      - **1G (Analógica)**
-      - **2G (GSM/SMS)**
-      - **3G (Datos banda ancha)**
-      - **4G (LTE/Celdas)**
-      - **5G (10 Gbps)**
-    - **Conmutación**
-      - **Paquetes (Datagramas, sin conexión)**
-      - **Circuitos (Orientada a conexión)**
-    - **Redes WiFi (802.11)**
-      - **Multipath fading**
-      - **CSMA**
-      - **Modos Ad-hoc y AP**
-
----
-
-## [quiz_or_flashcards] Network Flashcards
-
-```json
-{
-  "type": "quiz_or_flashcards",
-  "id": "5430e674-150c-4fbd-bc5b-02bb3e2e5976",
-  "title": "Network Flashcards"
-}
-```
-
----
-
-## [quiz_or_flashcards] Networking Flashcards
-
-```json
-{
-  "type": "quiz_or_flashcards",
-  "id": "8432f976-d4d6-4f3f-922e-c3c2ff3bffe8",
-  "title": "Networking Flashcards"
-}
-```
-
----
-
-## [quiz_or_flashcards] Redes Fichas
-
-```json
-{
-  "type": "quiz_or_flashcards",
-  "id": "7363b493-7e67-4378-bc9c-fb5c35441f4d",
-  "title": "Redes Fichas"
-}
-```
 
 ---
