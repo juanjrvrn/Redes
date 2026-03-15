@@ -36,7 +36,6 @@ Finalmente, un enlace **símplex** es aquel que **sólo permite el tráfico de d
 Aunque no es un "cable", el transporte físico de medios magnéticos o de estado sólido (cintas, CD, DVD o incluso camiones llenos de discos duros) es un método de transmisión física y guiada muy eficaz [2, 3].
 *   **Ventajas:** Ofrece un **ancho de banda efectivo insuperable**. Por ejemplo, enviar una caja con cintas de alta capacidad a través de un servicio de paquetería puede equivaler a una tasa de transferencia continua de más de 70 Gbps, a un costo sumamente bajo por bit [2, 4, 5]. Para el traslado de volúmenes masivos de datos (como el servicio *Snowmobile* de Amazon de 100 PB), ninguna red de telecomunicaciones lo supera [6].
 *   **Desventajas:** El **retardo (latencia) es altísimo**, ya que la transmisión tarda horas o días, lo que lo hace inútil para aplicaciones en tiempo real (web, videoconferencias) [7].
-*   
 
 ### 2. Par Trenzado
 Un cable de par trenzado consiste en dos hilos de cobre aislados, típicamente de 1 mm de grosor, que se entrelazan en forma helicoidal, similar a la estructura de una molécula de ADN. Este trenzado tiene un propósito físico fundamental: dos hilos paralelos actuarían como una antena que capta o irradia señales, pero al trenzarlos, las ondas electromagnéticas generadas por las distintas torsiones se anulan mutuamente. Esto hace que el cable irradie con menor eficacia y sufra menos interferencias. Además, la transmisión de datos se realiza midiendo la diferencia de tensión entre los dos hilos del par, lo que proporciona una excelente inmunidad al ruido externo, ya que cualquier perturbación afecta a ambos hilos por igual y la diferencia de voltaje se mantiene inalterada.
@@ -95,31 +94,18 @@ Para acoplar el cable coaxial a los equipos, se utilizan conectores metálicos e
 
 Las líneas eléctricas, también conocidas en el contexto de las redes como PLC (*Power Line Communications*), representan un medio guiado de transmisión que reutiliza el cableado eléctrico existente para la comunicación de datos. 
 
-**Concepto y funcionamiento visual**
 La premisa de las líneas de potencia es aprovechar la infraestructura de distribución de energía eléctrica, que ya está ampliamente desplegada tanto para llevar electricidad a las casas como para distribuirla en su interior a través de los enchufes. Tal como ilustran las imágenes de las diapositivas y del material de estudio, la transmisión de datos a través de estas líneas se logra superponiendo la señal de datos sobre la señal de potencia en el cable activo (o fase). 
 
 En la representación gráfica mostrada en las fuentes, se puede observar un ejemplo típico: un dispositivo (como un receptor de video) y un televisor conectados a tomas de corriente eléctrica estándar de la pared. A través del mismo cable, viajan simultáneamente dos señales: la señal de potencia eléctrica, representada como una onda sinusoidal de baja frecuencia, y la señal de datos, representada visualmente como una onda de altísima frecuencia ("WWWWWWWWWW") que se "monta" sobre la línea de energía.
 
-**Ventajas del sistema**
+**Ventajas, desafíos y problemas técnicos**
 El atractivo principal del uso de líneas eléctricas radica en su extrema conveniencia. Cualquier dispositivo conectado a la red, como un televisor, ya requiere estar enchufado a la corriente eléctrica para funcionar; al usar PLC, ese mismo enchufe provee la conexión a la red de datos. Esto elimina por completo la necesidad de instalar cableado adicional (como cables UTP) o depender de radios inalámbricas para compartir información de alto ancho de banda, como películas, dentro del hogar.
 
-**Desafíos y problemas técnicos**
-A pesar de su practicidad, el material destaca que las líneas de potencia son un medio "muy malo para el envío de datos". Esto se debe a que la red eléctrica fue diseñada exclusivamente para distribuir energía, un trabajo que es fundamentalmente distinto al de transmitir información. Los principales problemas técnicos incluyen:
-
-*   **Atenuación de altas frecuencias:** Las señales eléctricas convencionales viajan a frecuencias muy bajas (50-60 Hz). El cableado atenúa (debilita) enormemente las señales de frecuencia mucho más alta, en el rango de los megahercios (MHz), que son necesarias para transmitir datos a alta velocidad.
-*   **Propiedades eléctricas inestables:** Las características del cableado no solo varían de una casa a otra, sino que cambian constantemente dentro de una misma casa. Cada vez que se enciende o apaga un electrodoméstico, se alteran las condiciones del circuito, provocando que las señales de datos "reboten" de forma impredecible a través de los cables.
-*   **Ruido eléctrico:** Las corrientes transitorias que se generan al encender o apagar dispositivos (como motores de refrigeradores o luces) introducen ráfagas de ruido eléctrico que afectan una amplia gama de frecuencias, corrompiendo los datos.
-*   **Efecto antena:** A diferencia de los cables de red estructurados (como los de par trenzado) que están diseñados para cancelar el ruido electromagnético, el cableado eléctrico común actúa como una antena delgada. Capta fácilmente interferencias externas y, a su vez, irradia la señal de datos hacia el exterior.
-*   **Restricciones regulatorias:** Debido a que los cables irradian señales, los sistemas PLC deben diseñarse para evitar emitir datos en frecuencias con licencia legal, como las utilizadas por las bandas de radioaficionados, para cumplir con las normativas.
-
-**Rendimiento actual**
-Históricamente, las compañías eléctricas usaron este medio para comunicaciones de muy baja velocidad (como la lectura remota de medidores) y existían estándares domésticos lentos como el X10. Sin embargo, el interés actual se centra en el acceso a Internet de banda ancha. A pesar del entorno hostil y ruidoso de los cables eléctricos, las técnicas de comunicación modernas han logrado hacer práctico el envío de datos a velocidades de al menos 500 Mbps en distancias cortas dentro del hogar, utilizando esquemas que resisten las alteraciones y las ráfagas de errores. 
-
-El principio fundamental de la fibra óptica radica en atrapar haces de luz dentro de un medio físico para transmitir datos a velocidades extremadamente altas. Un sistema de transmisión óptica consta de tres elementos esenciales: una fuente de luz, el medio de transmisión (la fibra de vidrio) y un detector (fotodiodo) que convierte los pulsos de luz nuevamente en señales eléctricas.
+A pesar de su practicidad, el material destaca que las líneas de potencia son un medio "muy malo para el envío de datos". Esto se debe a que la red eléctrica fue diseñada exclusivamente para distribuir energía, un trabajo que es fundamentalmente distinto al de transmitir información. 
 
 ### 5. Fibra Óptica
 
-
+El principio fundamental de la fibra óptica radica en atrapar haces de luz dentro de un medio físico para transmitir datos a velocidades extremadamente altas. Un sistema de transmisión óptica consta de tres elementos esenciales: una fuente de luz, el medio de transmisión (la fibra de vidrio) y un detector (fotodiodo) que convierte los pulsos de luz nuevamente en señales eléctricas.
 
 **Principios Físicos: Refracción y Reflexión Interna Total**
 El funcionamiento de la fibra óptica se basa en las leyes de la física óptica, específicamente en la **Ley de Snell** ($n_1 \sin \theta_1 = n_2 \sin \theta_2$). Como se detalla en los diagramas de las diapositivas, cuando un rayo de luz viaja desde un medio con un índice de refracción mayor ($n_1$, como el núcleo de sílice) hacia uno menor ($n_2$, como el revestimiento o el aire), el rayo se refracta o se dobla. 
