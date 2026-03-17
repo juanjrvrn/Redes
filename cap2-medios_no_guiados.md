@@ -88,4 +88,42 @@ Gracias a esta extensa distribución de baja energía, la UWB ofrece caracterís
 *   Al concentrar tan poca energía en una frecuencia específica, no causa interferencias perjudiciales a otros dispositivos que operen en bandas estrechas compartiendo el mismo espacio radioeléctrico [6, 7].
 *   Sus aplicaciones típicas se centran en comunicaciones de corta distancia en interiores, funcionamiento de radares de precisión, obtención de imágenes a través de objetos sólidos y tecnología de localización [7, 8].
 
+### Utilización del espectro electromagnético para la transmisión 
+
+El espectro electromagnético se divide y su uso está estrictamente regulado mediante licencias gubernamentales para evitar interferencias. Sin embargo, existen excepciones conocidas como **bandas libres (ISM y U-NII)**, que permiten a los dispositivos de baja potencia operar sin licencia gestionando ellos mismos la interferencia. Según los esquemas visuales, estas bandas libres operan en frecuencias como 900 MHz, 2.4 GHz y 5 GHz, y son ampliamente utilizadas para tecnologías de uso cotidiano como **Wi-Fi (estándares 802.11 a/b/g/n), Bluetooth y Zigbee**.
+
+De acuerdo con la clasificación y los diagramas presentes en el material, la utilización del espectro para la transmisión no guiada se divide en cuatro grandes categorías principales:
+
+**1. Transmisión por Radiofrecuencias (3 KHz a 3 GHz)**
+Las ondas de radio son omnidireccionales, fáciles de generar, pueden recorrer grandes distancias y atraviesan fácilmente los muros y edificios. Las imágenes y gráficos detallan tres tipos de propagación dependiendo de la banda utilizada:
+*   **Propagación superficial (Ground-wave):** Presente en las bandas VLF, LF y MF. Las ondas siguen la curvatura de la Tierra. Se utilizan para la comunicación de submarinos, radiofaros y la radio AM.
+![ground wave](assets/ground_wave.png)
+*   **Propagación aérea (Sky-wave):** Característica de la banda HF. Las ondas rebotan en la ionosfera, lo que permite comunicaciones a gran distancia, siendo la opción preferida por la radioafición.
+![sky wave](assets/sky_wave.png)
+*   **Propagación por línea de vista (Line-of-sight):** Utilizada en bandas VHF y UHF. Las ondas viajan directo entre antenas y se emplean para radio FM, televisión local, telefonía móvil y sistemas GPS.
+![line of sight](assets/line_of_sight.png)
+
+**2. Transmisión por Microondas (3 GHz a 300 GHz)**
+Las microondas viajan en línea recta y, por lo tanto, son altamente direccionales (requiriendo línea de vista). Difícilmente logran atravesar objetos opacos. Concentran su energía usando antenas parabólicas y se emplean principalmente en telecomunicaciones de larga distancia, satélites, telefonía celular y Wi-Fi. 
+Al analizar su rendimiento, los esquemas indican que están sujetas a dos problemas importantes:
+*   **Atenuación:** Principal fuente de pérdida de la señal debido a la distancia o a la lluvia, ya que las gotas de agua absorben la energía de las microondas, particularmente alrededor y por encima de los 4 GHz.
+*   **Interferencia por múltiples trayectorias (Desvanecimiento multitrayecto):** Las ilustraciones de las diapositivas muestran cómo la señal originada en una antena puede rebotar contra edificios u otros objetos físicos (como vehículos) antes de llegar al receptor. Estas ondas retrasadas pueden llegar desfasadas respecto a la onda directa y terminar anulando la señal.
+
+El Sistema de Posicionamiento Global (GPS) es una tecnología de gran importancia que opera dentro de la categoría de las **microondas**, específicamente en la banda **UHF (Frecuencia Ultra Alta)** que comprende el rango de los 300 MHz a los 3 GHz. Por operar en estas frecuencias, su transmisión requiere una propagación de ondas por línea de vista (line-of-sight).
+
+El funcionamiento del GPS y su uso del espectro electromagnético se basan en las siguientes características detalladas en los esquemas y textos:
+
+*   **Constelación de satélites:** El sistema se apoya en una red de aproximadamente 30 satélites de órbita terrestre media (conocidos como satélites MEO), los cuales orbitan a una altitud de unos 20.200 km de la Tierra.
+*   **Gestión de la interferencia:** Para evitar problemas de interferencia y mejorar la robustez de la comunicación, el GPS utiliza la técnica de modulación conocida como **Espectro Ensanchado de Secuencia Directa (DSSS)**. Esta técnica reparte la señal en una banda de frecuencia más amplia utilizando una secuencia de códigos, lo que le permite tolerar interferencias y desvanecimientos de forma muy efectiva.
+*   **Transmisión de datos:** Las imágenes muestran que cada satélite envía una señal distinta al receptor GPS. En esta señal, el satélite transmite dos series de datos fundamentales: el **almanaque** y las **efemérides**. Con esta información, el receptor puede descifrar la ubicación espacial del satélite, además de la fecha y la hora exactas de la transmisión.
+*   **Cálculo de la posición:** Para que un receptor GPS pueda localizar al usuario (es decir, calcular la longitud y la latitud exactas en el mapa), es requisito indispensable obtener y triangular las señales de **al menos tres satélites** simultáneamente.
+
+
+**3. Transmisión por Infrarrojos (300 GHz a 400 THz)**
+Se emplean ondas no guiadas, altamente direccionales y de bajo costo para la comunicación de corto alcance. No pueden atravesar objetos sólidos, lo que desde una perspectiva de redes es una ventaja: la incapacidad de cruzar paredes impide la interferencia con sistemas de habitaciones adyacentes y provee una alta seguridad contra el robo de información. Por ello, los infrarrojos no requieren licencia de uso y son comunes en controles remotos de TV, reproductores Blu-ray y para interconectar laptops usando el estándar IrDA.
+
+**4. Transmisión por Ondas de Luz (Luz Visible y Láseres)**
+La transmisión óptica aprovecha el altísimo ancho de banda disponible a bajo costo.
+*   **Óptica de espacio libre (Láser):** Consiste en colocar láseres direccionales (por ejemplo, interconectando edificios). Los esquemas muestran una gran limitante ilustrando dos edificios: el sol calienta los techos generando **corrientes de convección y regiones de aire turbulento** que desvían y hacen "bailar" el rayo láser de su trayectoria, impidiendo que golpee el fotodetector receptor. Además, factores como la lluvia y la niebla también bloquean estos haces.
+*   **Li-Fi (Wireless LAN mediante luz visible):** Las diapositivas ilustran esta tecnología moderna utilizando el espectro de luz visible emitido por las bombillas de las habitaciones. La luz de las bombillas parpadea en periodos de nanosegundos (totalmente imperceptibles para el ojo humano) transmitiendo datos directamente a los dispositivos de los usuarios que se encuentran bajo ellas, brindando gran seguridad por su corto alcance.
 
