@@ -12,6 +12,7 @@ Para estudiar las señales en el **dominio del tiempo**, se clasifican según su
 ### Análisis de Fourier
 
 El puente fundamental para comprender cómo viajan estas señales físicamente es el **Análisis de Fourier**. Este principio matemático establece que cualquier señal en el tiempo se puede descomponer en una sumatoria de ondas sinusoidales (senos y cosenos), formadas por una frecuencia fundamental y múltiples armónicas con distintas amplitudes. Esta descomposición nos permite trasladar el estudio de las señales desde el dominio del tiempo hacia el **dominio de la frecuencia**.
+![Fourier](assets/fourier.png)
 
 Al analizar la transmisión en el dominio de la frecuencia, es imperativo distinguir entre tres conceptos interconectados: el espectro, el ancho de banda de la señal y el ancho de banda del canal.
 
