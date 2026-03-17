@@ -63,19 +63,22 @@ El **espectro expandido o ensanchado** es un método de codificación fundamenta
 **Espectro Ensanchado por Salto de Frecuencia (FHSS)**
 En esta técnica, co-inventada y patentada por la actriz Hedy Lamarr en 1942, la señal se envía a través de una serie pseudoaleatoria de frecuencias [1-3]. El transmisor "salta" de una frecuencia a otra cientos de veces por segundo, y el receptor debe realizar estos mismos saltos en estricto sincronismo con el transmisor para poder recuperar la información [1, 4]. Como ilustran los diagramas de las diapositivas, la energía de la señal no permanece en una única frecuencia, sino que el uso del canal se desplaza de manera aleatoria en el tiempo a través de diferentes frecuencias preasignadas en el espectro [1].
 
-Esta tecnología es muy resistente a las interferencias de banda estrecha y a la atenuación, ya que la transmisión no se queda bloqueada en una frecuencia deficiente el tiempo suficiente para que la comunicación se interrumpa [4]. El FHSS se divide en dos categorías según la relación entre el tiempo que dura cada salto de frecuencia ($T_c$) y la duración del elemento de señal o bit ($T_s$) [1]:
+Esta tecnología es muy resistente a las interferencias de banda estrecha y a la atenuación, ya que la transmisión no se queda bloqueada en una frecuencia deficiente el tiempo suficiente para que la comunicación se interrumpa [4]. El FHSS se divide en dos categorías según la relación entre el tiempo que dura cada salto de frecuencia ($T_c$, ranuras) y la duración del elemento de señal o bit ($T_s$, datos) [1]:
 *   **Slow FHSS (Salto lento):** Ocurre cuando $T_c (ranuras) \ge T_s$ (datos). En este caso, se transmiten uno o varios bits completos durante el tiempo que la señal permanece en una sola frecuencia [1].
+![slow fhss](assets/slow_fhss.png)
 *   **Fast FHSS (Salto rápido):** Ocurre cuando $T_c (ranuras) \le T_s$ (datos). En este escenario, la frecuencia cambia varias veces durante la transmisión de un solo bit [1]. Esta modalidad ofrece un mejor rendimiento y hace que la señal sea excepcionalmente resistente al ruido [1].
+![fast fhss](assets/fast_fhss.png)
 
 **Espectro Ensanchado de Secuencia Directa (DSSS)**
-A diferencia del salto de frecuencias, el DSSS utiliza una secuencia de códigos para expandir la señal de datos a lo largo de una banda de frecuencias más amplia [5]. En este esquema, cada bit de datos original es representado por múltiples bits utilizando un "código de expansión" (secuencia de chips) [5, 6]. 
+A diferencia del salto de frecuencias, el DSSS utiliza una secuencia de códigos pseudoaleatorios, como una máscara, para expandir la señal de datos a lo largo de una banda de frecuencias más amplia [5]. En este esquema, cada bit de datos original es representado por múltiples bits.
 
+![dsss](assets/dsss.png)
 Las imágenes de las diapositivas muestran visualmente cómo funciona este proceso en el transmisor y el receptor mediante una función XOR lógica: la entrada de datos original (señal A) se combina con un flujo de bits pseudoaleatorio generado localmente (señal B), el cual oscila a una velocidad mucho mayor ($T_c$) [6]. El resultado es la señal transmitida (señal C), que ahora posee un espectro ensanchado [6]. En el lado del receptor, se requiere utilizar exactamente la misma secuencia pseudoaleatoria (B) para combinarla con la señal recibida (C) y así recuperar con éxito la salida de datos original (A) [6].
 
 El DSSS ofrece un rendimiento y tolerancia a las interferencias muy similar al FHSS, ya que ante una distorsión solo se pierde una fracción de la señal deseada [5, 6]. Su uso comercial es sumamente amplio porque permite a múltiples señales compartir la misma banda de frecuencia codificando a los usuarios con secuencias diferentes (base de la tecnología CDMA), aplicándose intensivamente en redes celulares 3G y en el sistema GPS [5].
 
 **Comunicación por Banda Ultraancha (Ultra Wideband Communication - UWB)**
-La comunicación UWB, regulada bajo el estándar IEEE 802.15.4a, opera en un rango de frecuencias extremadamente extenso, desde los 3.1 hasta los 10.6 GHz [6]. En lugar de alterar una portadora continua, la UWB envía rápidos pulsos de muy baja energía variando continuamente sus frecuencias [6, 7]. Estas transiciones ultrarrápidas generan una señal que abarca un ancho de banda gigantesco (al menos 500 MHz o el 20% de su frecuencia central) [7].
+La comunicación UWB, regulada bajo el estándar IEEE 802.15.4a, opera en un rango de frecuencias extremadamente extenso, desde los 3.1 hasta los 10.6 GHz [6]. Envía rápidos pulsos de muy baja energía variando continuamente sus frecuencias [6, 7]. Estas transiciones ultrarrápidas generan una señal que abarca un ancho de banda gigantesco (al menos 500 MHz o el 20% de su frecuencia central) [7].
 
 El diagrama de la diapositiva ilustra la señal UWB como una capa subyacente ("underlay") muy amplia horizontalmente a lo largo del eje de las frecuencias, pero con una amplitud de alimentación muy baja en el eje vertical, operando prácticamente por debajo del espectro de ruido en comparación con los picos angostos y potentes de las señales originales o las de DSSS/FHSS [6].
 
