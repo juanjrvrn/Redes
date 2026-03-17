@@ -52,3 +52,42 @@ La imagen proporcionada en las diapositivas ilustra de manera muy clara cómo se
 
 Esta limitación analógica de 4 kHz dictada por los filtros telefónicos es la base para la digitalización moderna. Cuando esta señal analógica de audio se introduce en la red troncal telefónica, un dispositivo llamado códec la transforma en bits mediante Modulación por Impulsos Codificados (PCM). Para cumplir con el teorema de Nyquist, la red toma exactamente 8.000 muestras por segundo de ese canal de 4 kHz. Al usar 8 bits por muestra, obtenemos la velocidad estándar mundial para enviar una llamada de voz digital: 64.000 bits por segundo (64 kbps).
 
+### Impedimentos en la transmisión de datos
+
+En los sistemas de comunicación, es común que la señal recibida difiera de la señal transmitida original. En el caso de las señales analógicas, esto se traduce en una degradación directa de la calidad de la señal, mientras que en las señales digitales provoca errores en los bits que componen los datos. 
+
+Estas alteraciones se conocen como impedimentos en la transmisión de datos y se agrupan en tres grandes categorías principales: **atenuación, distorsión y ruido**.
+
+A continuación te presento un análisis detallado de cada uno de estos impedimentos, incorporando la información visual que presentan las diapositivas y las fórmulas solicitadas:
+
+**1. Atenuación**
+La atenuación es la pérdida o caída de la potencia de una señal debido a la distancia que debe recorrer a través de un medio de transmisión. Es una propiedad física inherente al medio y se agrava considerablemente a frecuencias más altas: a mayor frecuencia, mayor atenuación. Para que una transmisión sea exitosa, la señal que llega al receptor debe ser lo suficientemente fuerte para poder ser detectada correctamente y debe tener un nivel de potencia superior al nivel del ruido.
+
+*   **Análisis visual de las diapositivas:** Las diapositivas lo ilustran gráficamente mostrando una onda original ("Original") que, al viajar por el medio de transmisión hasta un Punto 2, pierde amplitud ("Attenuated"). Posteriormente, la señal pasa por un "Amplifier" (amplificador) amarillo que le devuelve su potencia, generando una onda mucho más grande ("Amplified") en el Punto 3.
+*   **Fórmula relacionada a la atenuación:** La atenuación (o amplificación) se calcula comparando la potencia de salida o final ($P_2$) frente a la potencia de entrada o inicial ($P_1$), y se expresa en decibeles (dB). La fórmula fundamental es:
+    
+    **$dB = 10 \log_{10} \left( \frac{P_2}{P_1} \right)$**
+
+    Las diapositivas proporcionan ejemplos prácticos de cómo usar esta fórmula:
+    *   Si la señal viaja por el medio y su potencia se reduce a la mitad ($P_2 = 0.5 P_1$), la pérdida de potencia se calcula como: $10 \log_{10}(0.5) = 10(-0.3) = -3 \text{ dB}$.
+    *   Si un amplificador incrementa la potencia de la señal 10 veces ($P_2 = 10 P_1$), la ganancia de potencia es: $10 \log_{10}(10) = 10(1) = 10 \text{ dB}$.
+    *   Una de las ventajas de usar decibeles es que los tramos se pueden sumar directamente. En el esquema mostrado, un cable pierde $-3 \text{ dB}$, un amplificador suma $+7 \text{ dB}$, y el siguiente tramo de cable pierde otros $-3 \text{ dB}$. La atenuación total se calcula mediante una suma simple: $-3 + 7 - 3 = +1 \text{ dB}$.
+
+**2. Distorsión**
+La distorsión no es una pérdida de potencia, sino **la pérdida de la forma original de la señal**. Un aspecto muy importante es que la distorsión no se puede solucionar simplemente añadiendo amplificadores (ya que estos solo harían más grande la señal deformada), sino que requiere el uso de regeneradores de señal o repetidores para reconstruirla.
+*   **Análisis visual de las diapositivas:** Para que el concepto sea fácil de entender, la diapositiva utiliza la analogía visual de una persona apuntando con un secador de pelo hacia la letra "A" pintada en un cuadro; el calor hace que la figura se derrita y las líneas de la letra comiencen a ondularse y deformarse, perdiendo su geometría original.
+*   **Tipos de distorsión:**
+    *   *Distorsión por atenuación (I):* Ocurre porque la atenuación no afecta por igual a todas las frecuencias. Es un problema crítico para las señales analógicas.
+    *   *Distorsión por retardo (II):* Se da porque la velocidad a la que se propagan las ondas varía dependiendo de la frecuencia. Este tipo de distorsión es el factor más crítico para las señales digitales.
+
+**3. Ruido**
+El ruido se define como señales adicionales aleatorias e indeseadas que se insertan en la línea entre el transmisor y el receptor. 
+*   **Análisis visual de las diapositivas:** Un gráfico muy representativo en la presentación muestra tres ejes temporales: primero, una "señal origen" digital limpia (una onda cuadrada que representa $1011001001101$); luego, el "ruido" que se presenta como una línea completamente irregular y caótica; y finalmente, la "señal deteriorada", que es el resultado de sumar las dos anteriores. En la señal deteriorada, los picos de ruido logran invertir el valor del voltaje, causando que algunos "0" se lean como "1" (resaltados en rojo), provocando errores de bits directos.
+
+Las diapositivas catalogan el ruido en cuatro orígenes principales:
+1.  **Ruido Térmico (i):** Causado por la agitación natural y aleatoria de los electrones en el medio. Tiene la característica de estar distribuido de manera uniforme a través de todas las frecuencias.
+2.  **Ruido de Intermodulación (ii):** Se produce cuando señales de diferentes frecuencias comparten el mismo medio. Las imágenes de las diapositivas muestran que al entrar dos frecuencias ($f_1$ y $f_2$) a un amplificador, no solo salen estas, sino que se generan nuevas señales "fantasma" que son la suma y diferencia matemática de las mismas (por ejemplo, $2f_1-f_2$ y $2f_2-f_1$).
+3.  **Diafonía o Crosstalk (iii):** Ocurre cuando la señal de una línea se acopla a otra. Gráficamente, las diapositivas lo representan mediante campos magnéticos concéntricos que irradian desde un cable activo e inducen corriente en un cable vecino que no debería tener esa señal.
+4.  **Ruido Impulsivo (iv):** Son pulsos irregulares o picos de altísima amplitud pero de muy corta duración. Las diapositivas utilizan imágenes de **relámpagos en una tormenta eléctrica** y de **tubos fluorescentes** para ejemplificar de dónde proviene la interferencia electromagnética que lo causa. Aunque los sistemas analógicos pueden tolerarlo hasta cierto punto, es la **mayor fuente de errores para los datos digitales**, ya que un solo pico o destello rápido puede corromper muchísimos bits a la vez.
+
+
