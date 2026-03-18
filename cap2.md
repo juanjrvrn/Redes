@@ -342,13 +342,13 @@ El uso práctico para telecomunicaciones se concentra en las bandas de radio y m
     *   **Propagación:** Superficial (ground-wave). Siguen la curvatura de la Tierra (hasta 1.000 km).
     *   **Aplicaciones:** Radionavegación de largo alcance, comunicaciones con submarinos, radiofaros y señal horaria.
 *   **MF (300 kHz - 3 MHz):**
-    *   **Propagación:** Aérea y superficial. Atraviesan edificios fácilmente.
+    *   **Propagación:** Superficial. Atraviesan edificios fácilmente.
     *   **Aplicaciones:** Radio AM (onda media).
 *   **HF (3 - 30 MHz):**
     *   **Propagación:** Aérea (sky-wave). Rebotan en la ionosfera, logrando alcances globales.
     *   **Aplicaciones:** Banda ciudadana (CB), radioafición, comunicación de barcos y aviones (onda corta).
 *   **VHF (30 - 300 MHz) y UHF (300 MHz - 3 GHz):**
-    *   **Propagación:** Aérea y línea de vista (line-of-sight). Las UHF no atraviesan bien los obstáculos y viajan en línea recta.
+    *   **Propagación:** Línea de vista (line-of-sight). Las UHF no atraviesan bien los obstáculos y viajan en línea recta.
     *   **Aplicaciones:** Radio FM, Televisión VHF/UHF, telefonía móvil (celular), buscapersonas, GPS y Bluetooth.
 *   **SHF (3 - 30 GHz) y EHF (30 - 300 GHz):**
     *   **Propagación:** Estrictamente línea de vista. Al ser microondas, se enfocan en haces estrechos con antenas parabólicas. Sufren atenuación por lluvia y no atraviesan objetos sólidos.
