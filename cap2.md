@@ -177,6 +177,7 @@ El diseño del cable coaxial está pensado para ofrecer una excelente inmunidad 
 Existen dos grandes familias de cables coaxiales, cuya distinción obedece más a motivos históricos que puramente técnicos. La tabla incluida en las diapositivas detalla las categorías específicas:
 * **Cable de 50 ohmios:** Tradicionalmente diseñado para transmisiones digitales. Dentro de esta impedancia se encuentran las categorías **RG-58**, utilizado históricamente para redes *Thin Ethernet*, y **RG-11**, destinado a redes *Thick Ethernet*.
 * **Cable de 75 ohmios:** Históricamente reservado para la transmisión analógica. Aquí se ubica la categoría **RG-59**, cuyo uso principal ha sido la televisión por cable (Cable TV). Desde mediados de la década de 1990, esta variante de 75 ohmios cobró vital importancia en el ámbito de los datos, ya que los operadores de cable comenzaron a utilizarla para ofrecer acceso a Internet de banda ancha en los hogares.
+También existe el cable twinaxial, que tiene dos núcleos y permite una velocidad de ethernet de 10 Gbs.
 
 **Conectores**
 Para acoplar el cable coaxial a los equipos, se utilizan conectores metálicos especializados. Las imágenes de las diapositivas muestran distintos conectores que se crimpan o enroscan al cable: conectores con sistema de bayoneta (tipo BNC) y conectores de rosca (como los de tipo F o tipo N), que aseguran el contacto eléctrico tanto del núcleo central como de la malla protectora.
