@@ -1,5 +1,6 @@
 ## Redes de telefonia conmutadas
 hice a mano en la tablet jeje...
+[Ver anotaciones](redes_telefonicas.pdf)
 ## Redes de cables
 Las redes de cable representan en la actualidad una de las infraestructuras más importantes para el acceso a Internet de banda ancha a nivel mundial. Originalmente diseñadas exclusivamente para la transmisión de televisión, han sufrido una evolución tecnológica profunda para soportar el tráfico de datos bidireccional y de alta velocidad.
 
