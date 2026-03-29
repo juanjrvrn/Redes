@@ -144,9 +144,9 @@ Basado en las imágenes y la información de las diapositivas, existen diferente
 
 A nivel de rendimiento, el par trenzado ha evolucionado en diferentes **categorías**:
 *   **Categoría 3 (Clase C):** Alcanza un ancho de banda de 16 MHz y es de tipo UTP. Fue el estándar histórico, pero ha sido reemplazado por versiones superiores.
-*   **Categoría 5 y 5e (Clase D):** Ofrecen un ancho de banda de 100 MHz. Para Ethernet a 100 Mbps, se utilizan solo dos de los cuatro pares (uno en cada dirección), mientras que para velocidades de 1 Gbps se utilizan los cuatro pares de forma simultánea.
-*   **Categoría 6 (Clase E):** Soporta hasta 200 MHz de ancho de banda y posee un mayor número de torsiones por metro para reducir la diafonía (crosstalk), permitiendo conexiones de hasta 10 Gbps.
-*   **Categoría 7 (Clase F):** Llega a 600 MHz y utiliza configuraciones SSTP (pares trenzados con blindaje individual y global), limitando significativamente la interferencia con cables cercanos.
+*   **Categoría 5 y 5e (Clase D):** Ofrecen un ancho de banda de 100 MHz. Para Ethernet a 100 Mbps, se utilizan solo dos de los cuatro pares (uno en cada dirección), mientras que para velocidades de 1 Gbps se utilizan los cuatro pares de forma simultánea. UTP/FTP.
+*   **Categoría 6 (Clase E):** Soporta hasta 200 MHz de ancho de banda y posee un mayor número de torsiones por metro para reducir la diafonía (crosstalk), permitiendo conexiones de hasta 10 Gbps. UTP/FTP.
+*   **Categoría 7 (Clase F):** Llega a 600 MHz y utiliza configuraciones SFTP (pares trenzados con blindaje individual y global), limitando significativamente la interferencia con cables cercanos. 
 *   **Categoría 8:** Es un cableado nuevo con un ancho de banda de 2 GHz. Está diseñado para redes Ethernet ultrarrápidas de 25 y 40 Gbps, pero su limitación es que solo soporta estas velocidades a distancias cortas (hasta 30 metros), por lo que se destina principalmente a centros de datos.
 
 Para realizar las terminaciones de estos cables, se utilizan los conectores **RJ-45** (las imágenes detallan las versiones macho y hembra con sus 8 pines metálicos). La asignación de los hilos de colores a los pines está regida por los estándares **EIA/TIA T568A y T568B**. En la actualidad, la norma T568A está prácticamente en desuso y ha sido reemplazada por la T568B. Según las configuraciones ilustradas en las diapositivas, se pueden crear cables **directos (straight-through)** si se usa el mismo estándar en ambos extremos, o cables **cruzados (crossover)** si se mezclan asignaciones para cruzar las vías de transmisión y recepción. No obstante, los equipos modernos evitan la necesidad de cables cruzados gracias al estándar **AUTO MDI/MDIX**, que detecta automáticamente el tipo de cable y ajusta la comunicación.
@@ -177,6 +177,7 @@ El diseño del cable coaxial está pensado para ofrecer una excelente inmunidad 
 Existen dos grandes familias de cables coaxiales, cuya distinción obedece más a motivos históricos que puramente técnicos. La tabla incluida en las diapositivas detalla las categorías específicas:
 * **Cable de 50 ohmios:** Tradicionalmente diseñado para transmisiones digitales. Dentro de esta impedancia se encuentran las categorías **RG-58**, utilizado históricamente para redes *Thin Ethernet*, y **RG-11**, destinado a redes *Thick Ethernet*.
 * **Cable de 75 ohmios:** Históricamente reservado para la transmisión analógica. Aquí se ubica la categoría **RG-59**, cuyo uso principal ha sido la televisión por cable (Cable TV). Desde mediados de la década de 1990, esta variante de 75 ohmios cobró vital importancia en el ámbito de los datos, ya que los operadores de cable comenzaron a utilizarla para ofrecer acceso a Internet de banda ancha en los hogares.
+* También existe el **cable twinaxial**, que tiene dos núcleos y permite una velocidad de ethernet de 10 Gbs.
 
 **Conectores**
 Para acoplar el cable coaxial a los equipos, se utilizan conectores metálicos especializados. Las imágenes de las diapositivas muestran distintos conectores que se crimpan o enroscan al cable: conectores con sistema de bayoneta (tipo BNC) y conectores de rosca (como los de tipo F o tipo N), que aseguran el contacto eléctrico tanto del núcleo central como de la malla protectora.
@@ -341,13 +342,13 @@ El uso práctico para telecomunicaciones se concentra en las bandas de radio y m
     *   **Propagación:** Superficial (ground-wave). Siguen la curvatura de la Tierra (hasta 1.000 km).
     *   **Aplicaciones:** Radionavegación de largo alcance, comunicaciones con submarinos, radiofaros y señal horaria.
 *   **MF (300 kHz - 3 MHz):**
-    *   **Propagación:** Aérea y superficial. Atraviesan edificios fácilmente.
+    *   **Propagación:** Superficial. Atraviesan edificios fácilmente.
     *   **Aplicaciones:** Radio AM (onda media).
 *   **HF (3 - 30 MHz):**
     *   **Propagación:** Aérea (sky-wave). Rebotan en la ionosfera, logrando alcances globales.
     *   **Aplicaciones:** Banda ciudadana (CB), radioafición, comunicación de barcos y aviones (onda corta).
 *   **VHF (30 - 300 MHz) y UHF (300 MHz - 3 GHz):**
-    *   **Propagación:** Aérea y línea de vista (line-of-sight). Las UHF no atraviesan bien los obstáculos y viajan en línea recta.
+    *   **Propagación:** Línea de vista (line-of-sight). Las UHF no atraviesan bien los obstáculos y viajan en línea recta.
     *   **Aplicaciones:** Radio FM, Televisión VHF/UHF, telefonía móvil (celular), buscapersonas, GPS y Bluetooth.
 *   **SHF (3 - 30 GHz) y EHF (30 - 300 GHz):**
     *   **Propagación:** Estrictamente línea de vista. Al ser microondas, se enfocan en haces estrechos con antenas parabólicas. Sufren atenuación por lluvia y no atraviesan objetos sólidos.
