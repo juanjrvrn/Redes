@@ -16,10 +16,7 @@ La unidad fundamental de información en esta capa es la **trama**. (Las diaposi
 *   **Encapsulación:** Un diagrama ilustra claramente este proceso: la máquina emisora toma un **Paquete** de la capa de red y la capa de enlace lo encapsula añadiéndole una **Cabecera (Header)** al inicio, ubicando el paquete en el **Campo de carga útil (Payload field)**, y colocando un **Remolque (Trailer)** al final.
 *   **Rutas de comunicación:** Otra imagen muestra cómo, conceptualmente, existe una "ruta de datos virtual" directa entre la capa de enlace del Host 1 y el Host 2, aunque la "ruta de datos real" implica que la trama baje a la capa física para viajar por el medio físico.
 
-### **Métodos de identificación de inicio y fin de tramas (Entramado):**
-Entiendo perfectamente que estos conceptos puedan resultar un poco abstractos al principio. En la capa de enlace, el gran desafío es tomar un flujo continuo de bits y cortarlo en bloques lógicos llamados **tramas** (frames). El receptor necesita saber exactamente dónde empieza y dónde termina cada bloque para poder procesar la información correctamente. 
-
-Vamos a desglosar cada método utilizando símbolos para visualizar cómo se arman estas tramas.
+## **Métodos de identificación de inicio y fin de tramas (Entramado):**
 
 ### a) Conteo de caracteres o Bytes
 En este método, el primer campo del encabezado de la trama especifica el número total de caracteres (o bytes) que contiene esa misma trama, incluyéndose a sí mismo.
