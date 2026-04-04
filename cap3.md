@@ -62,10 +62,7 @@ El objetivo primordial es transferir datos desde la capa de red del emisor a la 
 El control de flujo evita que un emisor rápido inunde a un receptor más lento, sobrepasando sus memorias intermedias. Se maneja principalmente mediante dos enfoques:
 *   **Basado en retroalimentación:** El receptor envía información al emisor otorgándole permiso explícito para enviar más datos.
 *   **Basado en tasas de bits:** El protocolo tiene mecanismos para limitar la velocidad de transmisión sin necesidad de recibir retroalimentación constante.
-
-Para optimizar el flujo y permitir que haya múltiples tramas en tránsito, se utilizan protocolos de **ventanas deslizantes** (sliding windows). Si ocurren errores en este flujo continuo (pipelining), se usan estrategias de petición de repetición automática (ARQ),:
-*   **Go-Back-N:** Ante un error, el receptor descarta la trama errónea y todas las subsecuentes. El emisor debe retroceder y retransmitir todo desde el punto de falla.
-*   **Repetición Selectiva:** El receptor acepta y almacena en un búfer las tramas correctas que llegan después de la errónea, enviando un acuse de recibo negativo (NAK). El emisor solo retransmite la trama específica que falló.
+Para optimizar el flujo y permitir que haya múltiples tramas en tránsito, se utilizan protocolos de **ventanas deslizantes** (sliding windows).
 
 ## **5. Corrección y Detección de Errores**
 El control de errores maneja las fallas causadas por ruido térmico, distorsión y atenuación. *En las diapositivas, las perturbaciones y fallos se ilustran de forma humorística con el personaje de Homero Simpson exclamando "D'OH!"*. Se emplea redundancia estructurada con dos propósitos distintos:
