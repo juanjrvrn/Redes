@@ -281,3 +281,53 @@ $$(m + r + 1) \le 2^r$$
 Con esto, ya tienes la justificación exacta de por qué el material del profesor llega a esa conclusión. Si te lo pregunta en el examen, ahora sabes que se trata de que las "burbujas" de error de cada mensaje válido no se superpongan entre sí.
 
 ¿Quieres que resolvamos el cálculo que te propuse antes sobre cuántos bits de paridad se necesitan para un byte completo ($m=8$), o tienes alguna otra diapositiva que quieras que analicemos de esta misma forma?
+
+
+# Regla de oro
+
+    **La regla de oro del entrelazado:** Si entrelazas $k$ bloques (es decir, creas una matriz de $k$ filas), tu sistema basado en Hamming será capaz de corregir automáticamente un error en ráfaga de hasta **$k$ bits de longitud**.
+
+El código de Hamming estándar **no puede** corregir errores en ráfaga por sí solo. Por diseño matemático, un código de Hamming clásico (como el Hamming 7,4) solo es capaz de detectar y corregir **un único bit erróneo** por cada bloque de datos. Si una ráfaga de ruido voltea 2, 3 o más bits dentro del mismo bloque, las matemáticas de Hamming colapsan y el mensaje se pierde.
+
+Para solucionar esto y aplicar Hamming a los errores en ráfaga, los ingenieros utilizan un truco brillante llamado **Entrelazado (Interleaving)** . 
+
+El entrelazado no cambia la matemática de Hamming, sino que **cambia el orden en el que se envían los bits al cable**. Aquí te explico paso a paso cómo se aplica:
+
+### 1. Generación de los bloques (Matemática normal)
+Primero, tomas tu mensaje original y lo divides en varios bloques. A cada bloque le calculas y le agregas sus bits de paridad de Hamming de forma completamente normal e independiente.
+
+Imagina que tienes 4 bloques (A, B, C y D) ya protegidos con Hamming. 
+
+### 2. La Matriz de Entrelazado (El truco)
+En lugar de enviar el Bloque A completo, luego el Bloque B, y así sucesivamente, el equipo emisor acomoda los bloques formando una matriz (filas y columnas):
+
+* **Fila 1:** $A_1 \ A_2 \ A_3 \ A_4 \ A_5 \ A_6 \ A_7$ (Bloque A protegido con Hamming)
+* **Fila 2:** $B_1 \ B_2 \ B_3 \ B_4 \ B_5 \ B_6 \ B_7$ (Bloque B protegido con Hamming)
+* **Fila 3:** $C_1 \ C_2 \ C_3 \ C_4 \ C_5 \ C_6 \ C_7$ (Bloque C protegido con Hamming)
+* **Fila 4:** $D_1 \ D_2 \ D_3 \ D_4 \ D_5 \ D_6 \ D_7$ (Bloque D protegido con Hamming)
+
+### 3. Transmisión por Columnas
+Aquí está la magia. En lugar de transmitir por filas, **el transmisor lee y envía los datos por columnas** (de arriba hacia abajo). 
+El orden exacto que viaja por el cable será:
+$$A_1, B_1, C_1, D_1, A_2, B_2, C_2, D_2, A_3, B_3...$$
+
+### 4. El ataque del Ruido (Error en ráfaga)
+Supongamos que cae un rayo o hay una interferencia fuerte que destruye **4 bits consecutivos** en el cable durante la transmisión. 
+El error golpea exactamente a esta secuencia: **[$C_2, D_2, A_3, B_3$]**.
+
+Si no hubiéramos usado entrelazado, esos 4 bits destruidos habrían caído todos dentro del Bloque A, y Hamming habría fallado miserablemente.
+
+### 5. Recepción y Reensamblaje (Desentrelazado)
+El equipo receptor recibe el flujo de datos y vuelve a armar la matriz original acomodando los bits en sus columnas correspondientes.
+
+Al leer las filas nuevamente para aplicar el corrector de Hamming, mira lo que pasó con el error en ráfaga:
+* **Fila 1 (Bloque A):** Tiene un error en $A_3$.
+* **Fila 2 (Bloque B):** Tiene un error en $B_3$.
+* **Fila 3 (Bloque C):** Tiene un error en $C_2$.
+* **Fila 4 (Bloque D):** Tiene un error en $D_2$.
+
+**¡La ráfaga se fragmentó!** Lo que era un error masivo de 4 bits consecutivos en el cable, al reensamblar la matriz, se dispersó como **un solo bit erróneo en cada bloque distinto**. 
+
+Como el código de Hamming es perfecto para corregir errores de 1 bit, el receptor aplica la matemática a cada fila individualmente, repara ese único bit dañado en cada bloque, y recupera el 100% del mensaje original a pesar del error en ráfaga.
+
+**La regla de oro del entrelazado:** Si entrelazas $k$ bloques (es decir, creas una matriz de $k$ filas), tu sistema basado en Hamming será capaz de corregir automáticamente un error en ráfaga de hasta **$k$ bits de longitud**.

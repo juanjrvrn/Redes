@@ -1,0 +1,3 @@
+El acceso a Internet a través de cables telefónicos tradicionales (el bucle local de cobre) utiliza generalmente tecnologías de la familia **DSL (Digital Subscriber Line)**, como el ADSL, las cuales emplean la técnica de modulación **DMT (Discrete MultiTone)**, que es una implementación de OFDM. 
+
+Por el contrario, **SONET** (Synchronous Optical Network) y su variante internacional **SDH** (Synchronous Digital Hierarchy) son estándares de multiplexación diseñados específicamente para **redes de fibra óptica**. Estas técnicas se utilizan en los enlaces troncales (trunks) de larga distancia y altísimo ancho de banda en el núcleo del sistema telefónico para interconectar las oficinas de conmutación, no en los cables de cobre que conectan a los usuarios finales.
