@@ -56,7 +56,7 @@ El empaquetamiento de los datos exige una estructura muy rígida. La diapositiva
 *   **Campo Longitud / Tipo (Length / Type):** 2 bytes. Aquí radica la diferencia clave:
     *   Si el valor es **$\ge 1536$ (0x0600)**: Se interpreta como "Ethertype" (Trama DIX), indicando qué protocolo de la capa de red viaja dentro (ej. IPv4).
     *   Si el valor es **$< 1536$**: Se interpreta como "Longitud" de los datos (Trama IEEE 802.3). En este caso, el "Ethertype" va oculto más adelante dentro de una cabecera adicional llamada **LLC/SNAP** (*Logical Link Control / Subnetwork Access Protocol* - **IEEE 802.2**) que ocupa 8 bytes y queda incrustado en los datos de la trama.
-*   **Datos (Data):** De 0 a 1500 bytes de carga útil (1492 si se usa LLC/SNAP, Ethernet DIX).
+*   **Datos (Data):** De 0 a 1500 bytes de carga útil (1492 si se usa LLC/SNAP, Ethernet clásico).
 *   **Relleno (Pad):** De 0 a 46 bytes. Se utiliza si los datos son muy pequeños, para forzar que la trama entera alcance el **mínimo estricto de 64 bytes** (512 bits). Este tamaño mínimo garantiza que la transmisión dure más tiempo que el viaje de ida y vuelta de la señal en el cable ($L_{trama\_minima} = V_t \cdot 2 \cdot \tau$), asegurando que el emisor detecte la colisión antes de terminar de hablar.
 *   **Suma de Comprobación (Checksum/CRC - *Cyclic Redundancy Check*):** 4 bytes finales (32 bits) calculados matemáticamente para detectar si la trama sufrió alteraciones eléctricas en el camino.
 
@@ -77,5 +77,5 @@ El documento hace un desglose vital de los bits menos significativos del primer 
     *   `1` = Dirección Local (administrada o alterada localmente por el administrador).
 *   **Dirección de Broadcast (Difusión):** Compuesta enteramente por unos (1). Se representa en hexadecimal como **FF:FF:FF:FF:FF:FF** y es aceptada por todas las estaciones de la red.
 
-
+Siguiente [Ethernet conmutado](ethernet_conmutado.md)
 
