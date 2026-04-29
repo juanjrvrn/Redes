@@ -118,7 +118,7 @@ Aquí es donde entra el nivel de detalle técnico crítico que se suele pregunta
     * **Carga útil (Payload):** **48 bytes** (el trocito de tu dato de Internet).
     * **Encabezado (Header):** **5 bytes** (información de ruteo y control).
 
-![partes de la trama adsl](assets\trama_adsl.png)
+![partes de la trama adsl](../assets/trama_adsl.png)
 
 *Nota técnica:* Esta obligación de usar celdas fijas de 53 bytes genera lo que se conoce como el "Impuesto ATM". Por cada 48 bytes de datos útiles, siempre tienes que desperdiciar 5 bytes en control, lo que hace que ADSL tenga una sobrecarga (overhead) notablemente mayor en comparación con redes de fibra pura (POS) o redes Ethernet.
 
