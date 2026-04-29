@@ -79,3 +79,65 @@ Para poder mantener el **tamaño de trama mínimo estándar de 64 bytes por moti
 
 *   **A) Ráfaga de tramas (*Fragment burst* o *Frame burst*):** Se envían juntas más de una trama consecutiva en el canal hasta sumar el mínimo estricto de 512 bytes entre todas ellas.
 *   **B) Extensión de portadora (*Carrier extension*):** Si se desea enviar una sola trama pequeña, el equipo emisor aumenta artificialmente el tamaño del campo de "Relleno" (*Pad*) mediante señales especiales hasta que la transmisión alcance los 512 bytes requeridos, asegurando que escuche lo suficiente como para detectar un posible choque.
+
+## **Ethernet de 10 Gigabits (10 GbE / XGbE)**
+
+Este estándar representó un salto monumental, siendo 1000 veces más rápido que la Ethernet original. Está pensado para conectar servidores de gama alta, redes troncales de centros de datos y redes de área metropolitana.
+
+**Estándares IEEE Implementados:**
+*   **IEEE 802.3ae (Año 2003):** Estándar principal, también conocido como **XGbE** o **10GbE**, enfocado inicialmente en fibra óptica.
+*   **IEEE 802.3an (Año 2007):** Estándar que introdujo específicamente la variante **10GBase-T** para operar sobre cables de cobre.
+
+**Clasificación de Implementaciones (Tabla de Cableado):**
+
+*   **10GBase-SR:**
+    *   **Cable:** Fibra óptica (*Fiber optics*).
+    *   **Segmento máximo:** Hasta 300 m.
+    *   **Ventajas / Características:** Utiliza fibra multimodo con longitud de onda corta de **0.85 $\mu$m**.
+*   **10GBase-LR:**
+    *   **Cable:** Fibra óptica (*Fiber optics*).
+    *   **Segmento máximo:** 10 km.
+    *   **Ventajas / Características:** Utiliza fibra monomodo con longitud de onda de **1.3 $\mu$m**.
+*   **10GBase-ER:**
+    *   **Cable:** Fibra óptica (*Fiber optics*).
+    *   **Segmento máximo:** 40 km.
+    *   **Ventajas / Características:** Utiliza fibra monomodo con longitud de onda extendida de **1.5 $\mu$m**. Es ideal para aplicaciones de área extensa (WAN).
+*   **10GBase-CX4:**
+    *   **Cable:** 4 Pares de twinax (*Twinaxial copper*).
+    *   **Segmento máximo:** 15 m.
+    *   **Ventajas / Características:** Cobre biaxial. Fue la primera versión de cobre, es barata, pero está restringida a distancias muy cortas.
+*   **10GBase-T:**
+    *   **Cable:** 4 Pares de UTP.
+    *   **Segmento máximo:** 100 m.
+    *   **Ventajas / Características:** Utiliza cableado Categoría 6a UTP.
+
+**Análisis Profundo del Estándar 10GBase-T (IEEE 802.3an):**
+Este estándar requirió un procesamiento de señal masivo para lograr 10 Gbps a través de cobre trenzado. La guía detalla las siguientes características inquebrantables:
+*   **Cables admitidos y distancias:** Soporta **Cat-6a** (logrando los 100 metros completos), pero si se recicla un cable **Cat 6** antiguo, la distancia máxima se recorta a **55 metros**. También soporta cables **Cat-7**.
+*   **El fin de las colisiones:** A esta velocidad, **No utiliza CSMA/CD** (*Carrier Sense Multiple Access with Collision Detection*). Opera estrictamente en modo **Full Duplex** sobre enlaces dedicados.
+*   **Modulación:** Emplea una compleja modulación digital llamada **PAM-16** (*Pulse Amplitude Modulation*), lo que significa que utiliza 16 niveles discretos de señal o voltaje para codificar múltiples bits por cada símbolo enviado.
+*   **Mercado:** Es considerada comercialmente como la opción **más rentable**.
+
+**Análisis de las Imágenes de Cableado:**
+Para cerrar el apartado de 10GBase-T, la diapositiva muestra fotografías que evidencian el nivel de protección electromagnética requerido a 10 Gbps:
+1.  **Cable cat 7-a SFTP** (*Shielded Foiled Twisted Pair*): Se observa un cable azul abierto donde cada uno de los cuatro pares trenzados está envuelto individualmente en papel de aluminio, además de contar con una malla metálica general.
+2.  **Cable cat 6-a STP** (*Shielded Twisted Pair*): Muestra un cable lila con una cubierta metálica protectora rodeando todos los pares de cobre.
+
+
+## **Autonegociación (Autonegotiation)**
+
+La autonegociación es un mecanismo diseñado para facilitar la interconexión de equipos de distintas generaciones (como 10, 100 y 1000 Mbps) sin intervención manual.
+
+**Características y Reglas de la Autonegociación:**
+El estándar define parámetros muy específicos sobre cómo y cuándo se debe usar esta función:
+*   **Ajuste Automático:** Permite ajustar la velocidad y el protocolo a utilizarse de forma totalmente automática (negociando si el puerto operará a 10, 100 o 1000 Mbps).
+*   **Negociación por Prioridades:** Al conectarse, los equipos intercambian sus capacidades y negocian la comunicación siguiendo una tabla de prioridad estricta para elegir el mejor modo que ambos soporten.
+*   **Dependencia del Medio Físico:** Esta función se utiliza de manera completa **sólo en puertos con cable UTP** (*Unshielded Twisted Pair* - Par trenzado no blindado). En conexiones de fibra óptica, la velocidad es fija y lo único negociable es el modo dúplex.
+*   **Problemas de Interoperabilidad:** La autonegociación puede fallar o no ser posible entre equipos de marcas diferentes, o causar un desajuste si un extremo negocia y el otro está forzado manualmente, lo que degrada gravemente el rendimiento.
+*   **Es Opcional:** La autonegociación no es obligatoria; puede estar activada o desactivada por el administrador de la red.
+
+**Análisis de la Imagen (Tabla de Prioridades):**
+La diapositiva presenta una tabla visual estructurada en columnas (Prioridad, Velocidad, Duplex) que ilustra el orden de decisión de las tarjetas de red. 
+*   Existen **12 niveles de prioridad** numerados del 1 (la más alta) al 12 (la más baja).
+*   A nivel de **Velocidad**, el equipo siempre intentará pactar en este orden: **1000 Mb/s** (Prioridades más altas), luego **100 Mb/s**, y por último **10 Mb/s**.
+*   A nivel de modo **Duplex**, dentro de una misma velocidad, el modo **Full-Duplex** (transmisión y recepción simultánea) siempre tiene mayor prioridad frente al modo **Half-Duplex** (transmisión alterna).
