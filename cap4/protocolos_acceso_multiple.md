@@ -130,3 +130,5 @@ El protocolo opera realizando una búsqueda o recorrido (walk) a través de las 
 **La naturaleza "Adaptativa"**
 El término "adaptativo" proviene de la capacidad del protocolo de ajustarse a la carga de la red. Si la red está fuertemente congestionada (muchas estaciones listas para transmitir), es un hecho matemático casi seguro que permitir que todas compitan en el Nodo 1 terminará en una colisión. 
 Para optimizar el tiempo y no desperdiciar ranuras en colisiones predecibles, el protocolo estima cuántas estaciones están activas. Bajo cargas pesadas, **omite por completo la competencia en el Nodo 1 (la raíz) y comienza la búsqueda directamente en los nodos inferiores** (por ejemplo, desde el Nodo 2 o más abajo), comportándose en la práctica como un protocolo libre de colisiones.
+
+Siguiente: [Ethernet Clásico](ethernet_clasico.md)
