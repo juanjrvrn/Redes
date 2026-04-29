@@ -77,5 +77,5 @@ El documento hace un desglose vital de los bits menos significativos del primer 
     *   `1` = Dirección Local (administrada o alterada localmente por el administrador).
 *   **Dirección de Broadcast (Difusión):** Compuesta enteramente por unos (1). Se representa en hexadecimal como **FF:FF:FF:FF:FF:FF** y es aceptada por todas las estaciones de la red.
 
-
+Siguiente [Ethernet conmutado](ethernet_conmutado.md)
 
