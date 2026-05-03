@@ -81,3 +81,5 @@ El peligro oculto: El problema es que, mientras esa persona hablaba, otros tres 
 
 ### **Confiabilidad**
 Para mejorar la confiabilidad se puede disminuir la tasa de bits (rate adaptation) o fragmentar las tramas.
+
+Siguiente [Tramas 802.11 (tramas80211.md)](tramas80211.md)
