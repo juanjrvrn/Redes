@@ -61,3 +61,4 @@ Si se necesita la cuarta dirección, se coloca luego del campo Secuencia y ocupa
 #### **6. Check Sequence / Secuencia de comprobación de trama (CRC) - 4 Bytes (32 bits)**
 *   **Características Técnicas:** Es el código detector de errores **CRC** (*Cyclic Redundancy Check* - Comprobación de Redundancia Cíclica). Si la trama sufre interferencias de radio, el cálculo matemático del CRC fallará y el receptor destruirá la trama silenciosamente, obligando al emisor a reintentar.
 
+Siguiente [bluetooth.md](bluetooth.md)
