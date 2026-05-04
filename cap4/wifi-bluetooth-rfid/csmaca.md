@@ -46,6 +46,7 @@ Para asegurar prioridades estrictas en el canal, los diagramas de tiempo dividen
 *   **SIFS (*Short InterFrame Spacing*):** Es el más corto (típicamente $10 \mu s$). Se usa para respuestas inmediatas de la misma conversación (como CTS, ACKs, o fragmentos consecutivos) para evitar que cualquier otra estación robe el canal.
 *   **PIFS (*PCF InterFrame Spacing*):** (Típicamente $30 \mu s$). Lo utilizan los AP para tomar control absoluto del medio en modo PCF.
 *   **DIFS (*DCF InterFrame Spacing*):** (Típicamente $50 \mu s$). Es el tiempo de espera predeterminado. Cualquier estación común debe encontrar el canal libre durante un tiempo DIFS antes de poder siquiera empezar a descontar su tiempo de *backoff* aleatorio para enviar tramas de datos regulares.
+*   **EIFS (Extended InterFrame Spacing):** Se usa únicamente por una estación que acaba de recibir una trama mala/corrupta para informar del problema o esperar sin interferir.
 *   **AIFS (*Arbitration InterFrame Space* - IEEE 802.11e):** Sustituye al DIFS cuando se aplican reglas de Calidad de Servicio (QoS). *AIFS1* es muy corto para dar prioridad al tráfico de voz en tiempo real, mientras que *AIFS4* es más largo, relegando las descargas de fondo al último lugar.
 
 ### **Funcionamiento IFS + Backoff (Algoritmo Exponencial Binario)**
