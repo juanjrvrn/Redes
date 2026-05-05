@@ -6,10 +6,12 @@ A diferencia de las redes cableadas, las redes inalámbricas no pueden detectar 
 ### **El Problema del Terminal Oculto (*Hidden Terminal*):** 
 *   **Características:** Ocurre cuando dos emisores (por ejemplo, A y C) están fuera del rango de escucha mutuo, pero ambos quieren transmitir a un receptor central (B) que está al alcance de ambos. 
 *   **Desventaja:** Si A transmite, C no escucha la señal, concluye erróneamente que el canal está libre y decide transmitir. Las señales de A y C colisionan y se destruyen en la antena de B, desperdiciando ancho de banda.
+*   SOLUCION: CTS.
 
 ### **El Problema del Terminal Expuesto (*Exposed Terminal*):** 
 *   **Características:** Ocurre cuando una estación (B) está transmitiendo a (A), y una tercera estación (C), dentro del rango de (B), quiere transmitir a un cuarto nodo (D).
 *   **Desventaja:** Al escuchar la transmisión de B, la estación C asume falsamente que el medio está ocupado y decide no enviar su trama a D. Sin embargo, su transmisión no interferiría con la recepción de A, lo que resulta en un desperdicio injustificado de oportunidades de transmisión.
+*   SOLUCION: RTS/CTS.
 
 ## **La Solución MAC: Protocolo CSMA/CA**
 
