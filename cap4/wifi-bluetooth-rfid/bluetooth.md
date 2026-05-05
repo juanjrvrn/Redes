@@ -17,8 +17,8 @@ La capa física de Bluetooth, conocida como capa de radio, opera en un entorno c
 *   **Técnica de Transmisión:** Utiliza **Espectro Disperso por Salto de Frecuencia** (*Frequency Hopping Spread Spectrum*) realizando hasta **1600 saltos por segundo**.
     *   **Salto de Frecuencia Adaptativo:** Para coexistir con redes como IEEE 802.11 (Wi-Fi) sin colisionar, Bluetooth adapta su secuencia de saltos excluyendo los canales donde detecta interferencias de otras señales de radiofrecuencia.
 *   **Técnicas de Modulación:**
-    *   **Tasa Básica (1 Mbps):** Utiliza modulación por desplazamiento de frecuencia, enviando 1 bit cada microsegundo.
-    *   **Tasas Mejoradas (2 o 3 Mbps):** Introducidas en la versión 2.0, utilizan modulación por desplazamiento de fase para enviar 2 o 3 bits por símbolo.
+    *   **Tasa Básica (1 Mbps):** Utiliza modulación por desplazamiento de frecuencia (*FSK*), enviando 1 bit cada microsegundo.
+    *   **Tasas Mejoradas (2 o 3 Mbps):** Introducidas en la versión 2.0, utilizan modulación por desplazamiento de fase (*PSK*) para enviar 2 o 3 bits por símbolo.
 
 ### **Clasificación Exhaustiva de Clases de Potencia Bluetooth**
 Basándonos en la tabla explícita de sus diapositivas, los dispositivos se clasifican según su potencia máxima y alcance aproximado:
