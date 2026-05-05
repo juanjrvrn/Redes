@@ -4,7 +4,7 @@ La subcapa **MAC** (*Medium Access Control* - Control de Acceso al Medio) se man
 
 ## **IEEE 802.11 (Legacy / Original)**
 *   **Fecha de lanzamiento:** 1997 - 1999.
-*   **Técnica de Capa Física:** Espectro ensanchado por salto de frecuencias (*Frequency Hopping*) e Infrarrojos.
+*   **Técnica de Capa Física:** FHSS (*Espectro ensanchado por salto de frecuencias*) e Infrarrojos.
 *   **Desventaja:** Tecnologías obsoletas que ya han desaparecido de la práctica comercial.
 
 ## **IEEE 802.11b**
