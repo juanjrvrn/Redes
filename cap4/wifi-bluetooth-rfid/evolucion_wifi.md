@@ -74,8 +74,6 @@ La subcapa **MAC** (*Medium Access Control* - Control de Acceso al Medio) se man
     *   Aplica **MU-MIMO** en ambas direcciones (subida y bajada).
     *   Utiliza anchos de canal de **20, 40, 80 o 160 MHz** con hasta **8 cadenas** de transmisión.
     *   Implementa modulación extrema: **1024-QAM**, que permite que cada símbolo codifique **10 bits** (superando los 8 bits de la versión *ac*).
-    *   **Característica (Target Wake Time / Tiempo de Activación Objetivo):** Permite al enrutador programar matemáticamente la transmisión de los dispositivos conectados (especialmente dispositivos de hogares inteligentes o IoT - Internet de las Cosas) para enviar "latidos" periódicos, minimizando las colisiones drásticamente.
-    *   Introduce dos **NAV** (*Network Allocation Vector*) paralelos: uno para la red asociada y otro para redes solapadas, mitigando caídas de rendimiento en entornos muy densos.
 *   **Compatibilidad:** Es totalmente retrocompatible con 802.11a/b/g/n/ac.
 
 Siguiente: [CSMA/CA](csmaca.md)
