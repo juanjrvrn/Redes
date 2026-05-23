@@ -65,12 +65,6 @@ La subcapa **MAC** (*Medium Access Control* - Control de Acceso al Medio) se man
     *   Implementa una modulación de alta densidad: **256-QAM**, que permite que cada símbolo codifique **8 bits**.
 *   **Desventaja:** Los dispositivos antiguos que solo poseen radios de 2.4 GHz no pueden ver ni utilizar esta red.
 
-## **IEEE 802.11ad (Tecnología Direccional)**
-*(Nota del profesor: Aunque no aparece en la tabla principal de la diapositiva 9, el estándar técnico lo clasifica como una adición crucial para entornos específicos)*.
-*   **Frecuencia:** Banda de **60 GHz** (57-71 GHz).
-*   **Ventajas/Características:** Al operar a frecuencias tan altas, las ondas de radio miden apenas 5 milímetros. Permite un ancho de banda masivo ideal para transmitir películas en resolución 4K u 8K sin comprimir.
-*   **Desventajas:** Las ondas son tan cortas que no pueden penetrar paredes en absoluto. Su cobertura está estrictamente confinada a los límites de una sola habitación. 
-
 ## **IEEE 802.11ax (Wi-Fi 6 / High Efficiency Wireless)**
 *   **Fecha de lanzamiento:** 2019.
 *   **Frecuencias:** **2.4 GHz y 5 GHz**.
