@@ -8,15 +8,15 @@ La primera gran evolución, denominada **Fast Ethernet** (estandarizada por el *
 El estándar definió variantes específicas de cableado para garantizar su viabilidad comercial, ilustradas en las tablas del material:
 
 *   **100Base-T4:**
-    *   **Cable:** Par trenzado (*Twisted pair*).
+    *   **Cable:** Dos UTP cat 3; Par trenzado (*Twisted pair*).
     *   **Segmento máximo:** 100 metros.
-    *   **Ventajas (*Advantages*):** Utiliza UTP (*Unshielded Twisted Pair*) de Categoría 3.
+    *   **Ventajas (*Advantages*):** Utiliza (*Unshielded Twisted Pair*) de Categoría 3.
 *   **100Base-TX:**
-    *   **Cable:** Par trenzado (*Twisted pair*).
+    *   **Cable:** Cuatro UTP cat 5 Par trenzado (*Twisted pair*).
     *   **Segmento máximo:** 100 metros.
     *   **Ventajas (*Advantages*):** Permite comunicación *Full duplex* a 100 Mbps.
 *   **100Base-FX:**
-    *   **Cable:** Fibra óptica (*Fiber optics*).
+    *   **Cable:** Fibra óptica (*Fiber optics*) multimodo.
     *   **Segmento máximo:** 2000 metros.
     *   **Ventajas (*Advantages*):** *Full duplex* a 100 Mbps; ideal para tramos largos (*long runs*).
 
